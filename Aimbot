@@ -116,15 +116,17 @@ local UIElements = Services.InsertService:LoadLocalAsset("rbxassetid://694522920
 local GuiObjects = UIElements.GuiObjects
 
 local Colors = {
-	PageTextPressed = Color3fromRGB(200, 200, 200);
-	PageBackgroundPressed = Color3fromRGB(15, 15, 15);
-	PageBorderPressed = Color3fromRGB(20, 20, 20);
-	PageTextHover = Color3fromRGB(175, 175, 175);
-	PageBackgroundHover = Color3fromRGB(16, 16, 16);
-	PageTextIdle = Color3fromRGB(150, 150, 150);
-	PageBackgroundIdle = Color3fromRGB(18, 18, 18);
-	PageBorderIdle = Color3fromRGB(18, 18, 18);
-	ElementBackground = Color3fromRGB(25, 25, 25);
+	PageTextPressed = Color3.fromRGB(0, 255, 255);         -- Cian brillante
+	PageBackgroundPressed = Color3.fromRGB(10, 10, 20);    -- Azul oscuro
+	PageBorderPressed = Color3.fromRGB(100, 0, 255);       -- Violeta brillante
+
+	PageTextHover = Color3.fromRGB(0, 200, 255);           -- Cian medio
+	PageBackgroundHover = Color3.fromRGB(15, 15, 30);      -- Azul grisáceo
+	
+	PageTextIdle = Color3.fromRGB(120, 120, 120);          -- Gris claro
+	PageBackgroundIdle = Color3.fromRGB(20, 20, 25);       -- Gris azulado oscuro
+	PageBorderIdle = Color3.fromRGB(40, 40, 60);           -- Gris violáceo
+	ElementBackground = Color3.fromRGB(30, 10, 40);        -- Fondo púrpura oscuro
 }
 
 local Debounce = function(Func)
